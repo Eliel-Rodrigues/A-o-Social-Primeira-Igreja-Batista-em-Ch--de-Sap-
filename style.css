@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.cabecalho{
+    position: relative;
+}
+
+.cabecalho__menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(58, 32, 2);;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.logo__img{
+    border-radius: 50%;
+    width: 5rem;
+    margin: .5rem 0 0 6rem;
+}
+
+.menu__lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 10rem;
+}
+
+.lista__item{
+    list-style: none;
+}
+
+.lista__link{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.lista__link:hover{
+   opacity: .5;
+}
+
+.opcao{
+    display: none;
+}
+
+.apresentacao{
+    height: vh;
+    width: vw;
+}
+
+.banner{
+    position: relative;
+}
+
+.imagem__banner{
+    width: 100%;
+}
+
+.conteiner__titulo{
+    position: absolute;
+    top: calc(50% - 7rem);
+    width: 100%;
+    box-shadow: 0 10px 5px rgb(230, 226, 226);
+    background-color: rgb(58, 32, 2);
+    opacity: 0.5;
+}
+
+.titulo__banner{
+    text-align: center;
+    color: white;
+    padding: 3rem;
+    font-size: 4rem;
+}
+
+.apresentacao__conteudo{
+    margin: 6rem;
+}
+
+.conteudo__titulo{
+    background-color: rgb(58, 32, 2);
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.conteudo{
+    margin-top: 4rem;
+    display: flex;
+    gap: 6rem;
+}
+
+.conteudo__texto{
+    font-size: 1.3rem;
+    margin-left: 2rem;
+}
+
+.texto__esp{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.conteudo__img{
+    width: 50%;
+    border-radius: 1rem;
+}
+
+.conteudo2{
+    position: relative;
+    margin-top: 6rem;
+}
+
+.conteudo__texto2{
+    position: absolute;
+    width: 45%;
+    top: 3rem;
+    left: 5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.conteudo__img2{
+    width: 100%;
+    height: 40rem;
+    border-radius: 1rem;
+}
+
+.subtitulo1, .subtitulo2 {
+    background-color: rgb(58, 32, 2);
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+.contato__ajudar{
+    background-color: rgb(58, 32, 2);
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+.item__ajudar{
+    margin-left: 2rem;
+}
+
+.link__ajudar{
+    text-decoration: none;
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+.numero__ajudar{
+    color: black;
+    font-weight: 600;
+}
+
+.titulo__quem__somos{
+    background-color: rgb(58, 32, 2);
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+.texto__quem__somos{
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.fixo{
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+    z-index: 1000;
+    animation: opacity 1.5s ease-in-out infinite;
+}
+
+.rodape{
+    background-color: rgb(58, 32, 2);
+    color: white;
+    font-weight: 300;
+   
+}
+
+.rodape__conteudo{
+    display: flex;
+    justify-content: space-around;
+}
+
+ .rodape__logo__img{
+    border-radius: 50%;
+    width: 5rem;
+    height: 4rem;
+    margin-top: 2rem;
+ }
+
+ .rodape__lista__item{
+    list-style: none;
+ }
+
+ .rodape__lista .rodape__lista__item:nth-child(1){
+   margin-bottom: 1rem;
+   font-weight:bolder;
+ }
+
+ .rodape__veciculo{
+    margin-top: 1rem;
+ }
+
+ @keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+ }
+
+ @media screen and (max-width: 480px){
+    .cabecalho__menu{
+        display: none;
+    }
+
+    .opcao__menu__hamburguer{
+        width: 24px;
+        height: 24px;
+        background-image: url(img/Menu.svg);
+        color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+    
+    .opcao{
+        display: flex;
+        padding: 0 2rem 0 2rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(58, 32, 2);;
+    }
+    
+    .opcao__botao{
+        display: none;
+    } 
+
+    .opcao__rotulo{
+        padding: .6rem;
+    }
+    
+    .opcao__botao:checked ~ .opcao__rotulo > .cabecalho__menu-hamburguer{
+        background-image: url(img/MenuAberto.svg);
+    }
+
+    .opcao__botao:checked ~ .opcao__rotulo{
+        background-color: antiquewhite;
+       
+    }
+
+    .opcao__botao:checked ~ .lista__menu{
+        display: block;
+    }
+
+    .lista__menu {
+        display: none;
+        list-style: none;
+        position: absolute;
+        padding: 1rem 0 2rem 2rem;
+        top: 1.9rem;
+        z-index: 1;
+        background-color: antiquewhite;
+    }
+
+    .lista__menu__item{
+        padding:.3rem 2rem .2rem 0;
+    }
+
+    .lista__menu__link{
+        color: rgb(58, 32, 2);
+        text-decoration: none;
+    }
+    
+    .opcao__logo__img{
+        width: 4rem;
+        height: 3rem;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+
+    .conteiner__titulo{
+        top: calc(50% - 2rem);
+    }
+
+    .titulo__banner{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .apresentacao__conteudo{
+        margin: 1rem;
+    }
+
+    .conteudo__titulo{
+        border-radius: .6rem;
+        font-size: .8rem;
+        padding: 1rem;
+    }
+
+    .conteudo{
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .conteudo__texto{
+        font-size: .8rem;
+        margin-left: .7rem;
+    }
+    
+    .texto__esp{
+        font-size: 1.4rem;
+        margin-left: 0;
+    }
+
+    .conteudo__img{
+        margin-top: -2rem;
+        width: 100%;
+        border-radius: .6rem
+    }
+
+    .conteudo__img2{
+        margin-top: -4rem;
+        width: 100%;
+        height: 20rem;
+        border-radius: 1rem;
+    }
+
+    .conteudo__texto2{
+        position: absolute;
+        width: 45%;
+        top: -4rem;
+        left: 2rem;
+        font-size: .9rem;
+        color: white;
+    }
+
+    .subtitulo1, .subtitulo2 {
+        border-radius: .6rem;
+        font-size: .8rem;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .contato__ajudar{
+        border-radius: .6rem;
+        font-size: .8rem;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .texto__ajudar{
+        font-size: .8rem;
+    }
+
+    .titulo__quem__somos{
+        border-radius: .6rem;
+        font-size: .8rem;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .texto__quem__somos{
+        margin-left: 0.7rem;
+        font-size: .8rem;
+    }
+    
+    .rodape__logo__img{
+        border-radius: 50%;
+        width: 4rem;
+        height: 3rem;
+        margin-top: 1rem;
+        margin-left: .5rem;
+     }
+
+     .rodape__lista .rodape__lista__item:nth-child(1){
+        margin-bottom: .6rem;
+        font-weight:bolder;
+        font-size: .8rem;
+      }
+     
+      .rodape__veciculo{
+         margin-top: 1rem;
+         font-size: .8rem;
+         flex-wrap: nowrap;
+      }
+
+      .rodape__lista__item{
+        font-size: .8rem;
+      }
+
+      .fixo{
+        display: none;
+      }
+}
+
+@media screen and (max-width: 768px){
+    .logo__img{
+        border-radius: 50%;
+        width: 5rem;
+        margin: .1rem;
+    }
+
+    .conteiner__titulo{
+        top: calc(50% - 3rem);
+    }
+
+    .titulo__banner{
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .apresentacao__conteudo{
+        margin: 2rem;
+    }
+
+    .conteudo__titulo{
+        border-radius: .6rem;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .conteudo{
+        margin-top: 4rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .conteudo__img{
+        width: 50%;
+        height: 20rem;
+        border-radius: 1rem;
+    }
+
+    .conteudo__texto{
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+    
+    .texto__esp{
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .conteudo2{
+        margin-top: 4rem;
+    }
+    
+    .conteudo__texto2{
+        width: 45%;
+        top: 1.5rem;
+        left: 3rem;
+        font-size: 1.5rem;   
+    }
+
+    .conteudo__img2{
+        width: 100%;
+        height: 35rem;
+        border-radius: 1rem;
+    }
+
+    .subtitulo1, .subtitulo2 {
+        border-radius: .6rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+    
+    .contato__ajudar{
+        border-radius: .6rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .titulo__quem__somos{
+        border-radius: .6rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+    
+    .texto__quem__somos{
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+
